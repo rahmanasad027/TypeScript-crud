@@ -1,13 +1,19 @@
-export enum fetchStates  {
-    DEFAULT = 'DEFAULT',
-    LOADING = 'LOADING',
-    SUCCESS = 'SUCCESS',
-    ERROR   = 'ERROR'
+export enum FETCHSTATES {
+  DEFAULT = "DEFAULT",
+  LOADING = "LOADING",
+  SUCCESS = "SUCCESS",
+  ERROR = "ERROR",
 }
 
 export type PostData = {
-    userId: number,
-    id: number,
-    title: string,
-    body: string
-}
+  userId: number | null;
+  id: number | null;
+  title: string;
+  body: string;
+};
+
+export type PostsData = {
+  title: string;
+  body: string;
+  userId: number;
+};
